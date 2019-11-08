@@ -2,12 +2,12 @@
 
 ### _QTπ Gang_
 
-| Version Control Master | Scrum Master      |
-| ---------------------- | ---------------   |
-| Naz Shabazz            | Cristian Cordoba  |
-| nxs2124                | cxc9597           |
-| Naz (nxs2124)          | Cristian (csc9597)|
-| edenhype               | Sicel             |
+|| Version Control Master | Scrum Master      |
+| ---------------------- | ---------------------- | ---------------   |
+| *Name* | Naz Shabazz            | Cristian Cordoba  |
+| *RIT Email* | nxs2124                | cxc9597           |
+| ... | Naz (nxs2124)          | Cristian (csc9597)|
+| *Github* | edenhype               | Sicel             |
 
 #### Keywords
 
