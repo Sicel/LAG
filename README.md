@@ -27,7 +27,7 @@ We want the player to become invested in the story of the player character and t
 
 1.  Core Mechaninc
 
-    -   Walking
+    -   Walking and looking around
     
 
 2.  Secondary Mechancis
@@ -53,4 +53,8 @@ We want to build a simple area of the world where the player can walk around. Th
 
 Pease add a short description of how this is relevant to your game (mechanic, art, theme, etc.). There is no limit to how many references you can have.
 
-1. References
+1. VA-11 Hall-A: A visual novel where you play as a bartender. It plays like a visual novel, but conversation routes are determined by what drinks you make. We wanted to capture the visual mood, and the feeling of the characters. 
+
+2. The Stanley Parable: The Stanley Parable has you control Stanley, an office worker as an omniscient narrator gives you a script to follow. The joy of the game comes from exploring different routes and veering off the path set by the narrator. We want to capture the walking sim perspective and freedom of choice. Freedom of choice might be a stretch goal, but this is a good reference point.
+
+3. Ghost Voices (music video): the ghosts shown around the 52s mark are perfect
