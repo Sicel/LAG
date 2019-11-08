@@ -37,12 +37,12 @@ We want the player to become invested in the story of the player character and t
 
 3.  Progression
 
-    -   Progression
+    -   Progression will be based on exploring the environment and character interactions. As the "rider" in our player's mind is ready     to leave, the game will be completed. 
 
 
 4.  Narrative
 
-    -   Narrative
+    -   The narrative will explore how the player character and the other person (people?) in his mind interact. The player character       will be able to help these people, and eventually find his purpose in life. 
 
 
 #### Minimal Viable Interaction
