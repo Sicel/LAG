@@ -8,32 +8,26 @@
 | **Scrum Master**           | Cristian Cordoba | (cxc9597) | Sicel    |
 
 #### Keywords
-
--   3D Walking Simulator
--   Cyberpunk
--   Heavy Narrative
+- Walking Simulator, Cyberpunk, Heavy Narrative, 3D
 
 #### Platforms(s)
-
--   Desktop (PC)
+- Desktop (PC)
 
 #### Target Player Experience
-
-We want the player to become invested in the story of the player character and the ghost the player is helping as they explore the world around them.
+ - We want the player to become invested in the story of the player character and the ghost the player is helping as they explore the world around them.
 
 #### Core Diagram
-
 1.  Core Mechanic
-    -   Walking / Exploring the city block
+    - Walking / Exploring the city block
 1.  Secondary Mechanics
-    -   Interacting with objects
+    - Interacting with objects
 1.  Progression
-    -   Progression will be based on exploring the environment and character interactions, and getting closer to fulfilling the ghost's goal. Once the ghost's dilemma is resolved, the game has been won.
+    - Progression will be based on exploring the environment and character interactions, and getting closer to fulfilling the ghost's goal. Once the ghost's dilemma is resolved, the game has been won.
 1.  Narrative
-    -   The narrative will explore how the player character and the other person (people?) in his mind interact. The player character       will be able to help these people, and eventually find his purpose in life. 
+    - The narrative will explore how the player character and the other person (people?) in his mind interact. The player character       will be able to help these people, and eventually find his purpose in life. 
 
 #### Minimal Viable Interaction
-There is only one anime ghost for the player to absolve. The player will have one city block to explore, and items and events are scattered throughout to help the player absolve the ghost.
+ - There is only one anime ghost for the player to absolve. The player will have one city block to explore, and items and events are scattered throughout to help the player absolve the ghost.
 
 #### References
 
