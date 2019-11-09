@@ -34,7 +34,7 @@ We want the player to become invested in the story of the player character and t
     -   The narrative will explore how the player character and the other person (people?) in his mind interact. The player character       will be able to help these people, and eventually find his purpose in life. 
 
 #### Minimal Viable Interaction
-There is only one anime ghost for the player to absolve. They will have one city block to explore. Items and events are scattered throughout to help the player absolve the ghost.
+There is only one anime ghost for the player to absolve. The player will have one city block to explore, and items and events are scattered throughout to help the player absolve the ghost.
 
 #### References
 
