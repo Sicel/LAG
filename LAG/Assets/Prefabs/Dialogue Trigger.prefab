@@ -57,6 +57,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0a3e928366eb641bc65ec13d4e837b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences: []
+  dialogueList: {fileID: 11400000, guid: f7738d7fde124454abfe0995b87fab36, type: 2}
+  dialogue: {fileID: 0}

@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add8fab0b4c982941bbda1447f2f673b, type: 3}
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
-  name: 
-  sentences: []
+  id: 0
+  numDialogue: 3
+  speakers:
+  - 
+  - 
+  - 
+  sentences:
+  - 
+  - 
+  - 
   audio: {fileID: 0}
+  usePrevSpeaker: 000000

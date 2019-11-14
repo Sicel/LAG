@@ -7,7 +7,10 @@ public class Dialogue : ScriptableObject
 {
     //public string name;
     public int id;
-    public List<string> speaker;
+    public int numDialogue;
+    public List<string> speakers;
     public List<string> sentences;
     public AudioClip audio;
+
+    [SerializeField] private List<bool> usePrevSpeaker;
 }

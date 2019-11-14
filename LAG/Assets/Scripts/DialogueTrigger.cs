@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    [SerializeField] private DialogueList dialogueList;
     public Dialogue dialogue;
 
     public void OnEnable()
     {
-        Debug.Log("Hi");
+        dialogueList.CurrentIndex = dialogue.id;
     }
 
     private void OnTriggerEnter(Collider other)

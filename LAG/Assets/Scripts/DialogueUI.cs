@@ -9,15 +9,46 @@ public class DialogueUI : MonoBehaviour
     public TextMeshProUGUI speaker;
     public TextMeshProUGUI dialogue;
 
-    // Start is called before the first frame update
-    void Start()
+    private Queue<string> speakers;
+    private Queue<string> textToDisplay;
+    //public static DialogueManager self;
+
+    public Dialogue CurrentDialogue { get => dialogueList.CurrentDialogue; }
+
+    private void Start()
     {
-        
+        speakers = new Queue<string>();
+        textToDisplay = new Queue<string>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartDialogue()
     {
-        
+        speakers.Clear();
+        textToDisplay.Clear();
+
+        for (int i = 0; i < CurrentDialogue.numDialogue; i++)
+        {
+            speakers.Enqueue(CurrentDialogue.speakers[i]);
+            textToDisplay.Enqueue(CurrentDialogue.sentences[i]);
+        }
+
+        DisplayNextSentence();
+    }
+
+    private void DisplayNextSentence()
+    {
+        if (textToDisplay.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
+
+        speaker.text = speakers.Dequeue();
+        dialogue.text = textToDisplay.Dequeue();
+    }
+
+    private void EndDialogue()
+    {
+
     }
 }
