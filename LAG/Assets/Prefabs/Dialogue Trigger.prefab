@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9116507261834760103}
   - component: {fileID: 9116507261834760102}
   - component: {fileID: 9116507261834760101}
+  - component: {fileID: 7557351460010115048}
   m_Layer: 0
   m_Name: Dialogue Trigger
   m_TagString: Untagged
@@ -52,10 +53,39 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9116507261834760100}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb0a3e928366eb641bc65ec13d4e837b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueList: {fileID: 11400000, guid: f7738d7fde124454abfe0995b87fab36, type: 2}
-  dialogue: {fileID: 0}
+  gameEvent: {fileID: 11400000, guid: b7db26186aabe4d42aa92b883a89f561, type: 2}
+--- !u!114 &7557351460010115048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9116507261834760100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05cdf82065f5bc744b261ca160dabdb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b7db26186aabe4d42aa92b883a89f561, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6365946406604163190, guid: c7896885b8691324f9af7ffc6d4f796b,
+          type: 3}
+        m_MethodName: StartDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

@@ -39,15 +39,15 @@ public class DialogueEditor : Editor
         EditorGUI.indentLevel++;
         for (int i = 0; i < numDialogue.intValue; i++)
         {
-            EditorGUILayout.BeginHorizontal();
+            bool showingDialogue = names.GetArrayElementAtIndex(i).isExpanded;
 
-            //EditorGUILayout.PrefixLabel("Speaker");
             EditorGUILayout.BeginHorizontal();
-            //names.GetArrayElementAtIndex(i).stringValue = EditorGUILayout.TextField(names.GetArrayElementAtIndex(i).stringValue, GUILayout.ExpandWidth(true));
-            EditorGUILayout.PropertyField(names.GetArrayElementAtIndex(i), new GUIContent("Speaker"), GUILayout.ExpandWidth(true));
+            showingDialogue = EditorGUILayout.Foldout(showingDialogue, new GUIContent("Speaker"));
+
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PropertyField(names.GetArrayElementAtIndex(i), GUIContent.none);
             if (i != 0)
             {
-                //usePrevName.GetArrayElementAtIndex(i).boolValue = EditorGUILayout.ToggleLeft("Same Speaker", usePrevName.GetArrayElementAtIndex(i).boolValue);
                 EditorGUILayout.PropertyField(usePrevName.GetArrayElementAtIndex(i), GUIContent.none);
                 if (usePrevName.GetArrayElementAtIndex(i).boolValue)
                 {
@@ -58,10 +58,15 @@ public class DialogueEditor : Editor
 
             EditorGUILayout.EndHorizontal();
 
-            EditorGUILayout.PropertyField(dialogues.GetArrayElementAtIndex(i), new GUIContent("Dialogue"));
+            if (showingDialogue)
+            {
+                EditorGUILayout.PropertyField(dialogues.GetArrayElementAtIndex(i), new GUIContent("Dialogue"));
+                EditorGUILayout.PropertyField(audioClip, new GUIContent("Audio"));
+                EditorGUILayout.Space();
+            }
 
-            EditorGUILayout.PropertyField(audioClip, new GUIContent("Audio"));
-            EditorGUILayout.Space();
+            names.GetArrayElementAtIndex(i).isExpanded = showingDialogue;
+
         }
         EditorGUI.indentLevel--;
 

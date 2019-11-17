@@ -9,18 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add8fab0b4c982941bbda1447f2f673b, type: 3}
-  m_Name: New Dialogue
+  m_Script: {fileID: 11500000, guid: ddcf3bc7c9e921640be024e720301e7d, type: 3}
+  m_Name: TriggeredDialogue
   m_EditorClassIdentifier: 
-  id: 0
-  numDialogue: 3
-  speakers:
-  - 
-  - 
-  - 
-  sentences:
-  - 
-  - 
-  - 
-  audio: {fileID: 0}
-  usePrevSpeaker: 000000

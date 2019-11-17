@@ -13,7 +13,10 @@ public class DialogueUI : MonoBehaviour
     private Queue<string> textToDisplay;
     //public static DialogueManager self;
 
-    public Dialogue CurrentDialogue { get => dialogueList.CurrentDialogue; }
+    public Dialogue CurrentDialogue
+    {
+        get => dialogueList.CurrentDialogue;
+    }
 
     private void Start()
     {
@@ -21,15 +24,15 @@ public class DialogueUI : MonoBehaviour
         textToDisplay = new Queue<string>();
     }
 
-    public void StartDialogue()
+    public void StartDialogue(Dialogue dialogue)
     {
         speakers.Clear();
         textToDisplay.Clear();
 
-        for (int i = 0; i < CurrentDialogue.numDialogue; i++)
+        for (int i = 0; i < dialogue.numDialogue; i++)
         {
-            speakers.Enqueue(CurrentDialogue.speakers[i]);
-            textToDisplay.Enqueue(CurrentDialogue.sentences[i]);
+            speakers.Enqueue(dialogue.speakers[i]);
+            textToDisplay.Enqueue(dialogue.sentences[i]);
         }
 
         DisplayNextSentence();
