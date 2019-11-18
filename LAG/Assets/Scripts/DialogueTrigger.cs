@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(GameEventListener))]
 public class DialogueTrigger : MonoBehaviour
 {
-    [SerializeField] private GameEvent gameEvent;
+    [SerializeField] private GameEvent gameEvent = null;
 
     public void OnEnable()
     {

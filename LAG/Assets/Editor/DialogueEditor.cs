@@ -6,7 +6,6 @@ using UnityEditor;
 [CustomEditor(typeof(Dialogue))]
 public class DialogueEditor : Editor
 {
-    SerializedProperty id;
     SerializedProperty numDialogue;
     SerializedProperty names;
     SerializedProperty dialogues;
@@ -16,7 +15,6 @@ public class DialogueEditor : Editor
 
     private void OnEnable()
     {
-        id = serializedObject.FindProperty("id");
         numDialogue = serializedObject.FindProperty("numDialogue");
         names = serializedObject.FindProperty("speakers");
         dialogues = serializedObject.FindProperty("sentences");
@@ -29,8 +27,6 @@ public class DialogueEditor : Editor
     // TODO: Fix Formatting
     public override void OnInspectorGUI()
     {
-        //base.OnInspectorGUI();
-        EditorGUILayout.LabelField("ID " + id.intValue.ToString());
         EditorGUILayout.PropertyField(numDialogue);
         names.arraySize = numDialogue.intValue;
         dialogues.arraySize = numDialogue.intValue;

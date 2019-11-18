@@ -6,7 +6,6 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     //public string name;
-    public int id;
     public int numDialogue;
     public List<string> speakers;
 

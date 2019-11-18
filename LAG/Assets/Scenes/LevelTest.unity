@@ -5505,7 +5505,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -5616,10 +5616,10 @@ RectTransform:
   m_Father: {fileID: 313828926}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 80.56, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055673678
 MonoBehaviour:
@@ -5677,9 +5677,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1055673678}
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 90827154}
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16510,10 +16510,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 313828926}
     m_Modifications:
+    - target: {fileID: 6365946406604163190, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: typeSentence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406604163190, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: timeBeforeNextSentence
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6365946406604163188, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_Name
       value: Dialogue Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406604163188, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6365946406604163189, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
@@ -16623,54 +16638,65 @@ PrefabInstance:
     - target: {fileID: 6365946406307302556, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6365946406307302556, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6365946406307302556, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 6365946406307302556, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -12.35
       objectReference: {fileID: 0}
     - target: {fileID: 6365946406307302556, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1280
       objectReference: {fileID: 0}
     - target: {fileID: 6365946405620826447, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6365946405620826447, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6365946405620826447, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 6365946405620826447, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -58.45863
       objectReference: {fileID: 0}
     - target: {fileID: 6365946405620826447, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_SizeDelta.x
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946405620826446, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6365946406307302547, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6365946406604163186, guid: c7896885b8691324f9af7ffc6d4f796b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c7896885b8691324f9af7ffc6d4f796b, type: 3}
 --- !u!1001 &9116507263068974468
 PrefabInstance:
@@ -16679,12 +16705,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9116507261834760100, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
         type: 3}
-      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 11400000, guid: 66d3c046c1f800d479f584d95968ff2b,
-        type: 2}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
         type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -16695,11 +16725,89 @@ PrefabInstance:
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartDialogue
       objectReference: {fileID: 0}
-    - target: {fileID: 9116507261834760100, guid: 857cdae87303de6449515bbb052e1306,
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
         type: 3}
-      propertyPath: m_Name
-      value: Dialogue Trigger
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 90827154}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StartDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 66d3c046c1f800d479f584d95968ff2b,
+        type: 2}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 90827154}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: StartDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 66d3c046c1f800d479f584d95968ff2b,
+        type: 2}
+    - target: {fileID: 7557351460010115048, guid: 857cdae87303de6449515bbb052e1306,
+        type: 3}
+      propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 66d3c046c1f800d479f584d95968ff2b,
+        type: 2}
     - target: {fileID: 9116507261834760103, guid: 857cdae87303de6449515bbb052e1306,
         type: 3}
       propertyPath: m_LocalPosition.x
