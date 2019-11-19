@@ -16695,6 +16695,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6365946405620826440, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946405620826440, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946405620826440, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946405620826440, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 257
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406307302557, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406307302557, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406307302557, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406307302557, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6365946406604163186, guid: c7896885b8691324f9af7ffc6d4f796b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c7896885b8691324f9af7ffc6d4f796b, type: 3}

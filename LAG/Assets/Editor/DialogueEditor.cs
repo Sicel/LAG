@@ -68,4 +68,14 @@ public class DialogueEditor : Editor
 
         serializedObject.ApplyModifiedProperties();
     }
+
+    private void OnDisable()
+    {
+        for (int i = 0; i < dialogues.arraySize; i++)
+        {
+            dialogues.GetArrayElementAtIndex(i).stringValue = dialogues.GetArrayElementAtIndex(i).stringValue.Replace("\r", string.Empty);
+        }
+
+        serializedObject.ApplyModifiedProperties();
+    }
 }

@@ -14,9 +14,10 @@ public class DialogueUI : MonoBehaviour
     private AudioSource audioSource;
     private List<string> speakers;
     private List<string> textToDisplay;
-    private int index = -1;
+    private int index = 0;
     private float timer = 0.0f;
     private bool timerStarted;
+    private bool dialogueStarted = false;
     //public static DialogueManager self;
 
     private void Start()
@@ -28,6 +29,12 @@ public class DialogueUI : MonoBehaviour
 
     private void Update()
     {
+        if (!dialogueStarted)
+            return;
+
+        if (dialogue.text == textToDisplay[index])
+            timerStarted = true;
+
         if (timerStarted)
         {
             timer += Time.deltaTime;
@@ -35,9 +42,6 @@ public class DialogueUI : MonoBehaviour
             if (timer >= timeBeforeNextSentence)
                 DisplayNextSentence();
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            DisplayNextSentence();
     }
 
 
@@ -45,10 +49,11 @@ public class DialogueUI : MonoBehaviour
     {
         speakers.Clear();
         textToDisplay.Clear();
-        index = 0;
+        index = -1;
         speaker.gameObject.SetActive(true);
         this.dialogue.gameObject.SetActive(true);
         audioSource.clip = dialogue.audio;
+        dialogueStarted = true;
 
         for (int i = 0; i < dialogue.numDialogue; i++)
         {
@@ -61,13 +66,19 @@ public class DialogueUI : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        timer = 0;
-        timerStarted = false;
-        if (index == textToDisplay.Count)   
+        if (index < textToDisplay.Count - 1)
+        {
+            index++;
+        }
+        else
         {
             EndDialogue();
             return;
         }
+
+        timer = 0;
+        timerStarted = false;
+        dialogue.text = "";
 
         if (audioSource.clip)
             audioSource.Play();
@@ -98,23 +109,21 @@ public class DialogueUI : MonoBehaviour
             dialogue.text = sentence;
             timerStarted = true;
         }
-        index++;
     }
 
     IEnumerator TypeSentence(string sentence)
     {
-        dialogue.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             dialogue.text += letter;
             yield return new WaitForSeconds(typeSpeed);
         }
-        timerStarted = true;
     }
 
     private void EndDialogue()
     {
         speaker.gameObject.SetActive(false);
         dialogue.gameObject.SetActive(false);
+        dialogueStarted = false;
     }
 }
