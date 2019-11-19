@@ -6,9 +6,10 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     //public string name;
-    public int id;
     public int numDialogue;
     public List<string> speakers;
+
+    [TextArea(2, 10)]
     public List<string> sentences;
     public AudioClip audio;
 

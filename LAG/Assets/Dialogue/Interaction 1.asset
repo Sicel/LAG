@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add8fab0b4c982941bbda1447f2f673b, type: 3}
+  m_Name: Interaction 1
+  m_EditorClassIdentifier: 
+  numDialogue: 14
+  speakers:
+  - Kana
+  - Kana
+  - Kana
+  - 
+  - Kana
+  - Kana
+  - Me
+  - Kana
+  - Me
+  - Me
+  - Kana
+  - Kana
+  - Kana
+  - Kana
+  sentences:
+  - Hey.
+  - Psst! Hey! You with the port!
+  - "Come on, there\u2019s literally no one\r else here."
+  - I turn to face the girl, hoping to get this over with as quickly as possible
+  - Ah, great. I noticed that you uh... have that port on your head.
+  - Does it do what I think it does?
+  - That guess that depends
+  - "I mean, you know\u2026 I heard it can do\r neat things. Can\u2019t it transfer
+    souls?"
+  - . . .
+  - I don't know what you're talking about
+  - "Oh come on, don\x19t try to pull that.\r You and I both know exactly what it
+    does."
+  - " I just want one small favor. Just\r one. I\x19ll give you plenty of scripts
+    too. Just name your price."
+  - "Just\r one. I\x19ll give you plenty of scripts too. "
+  - Just name your price.
+  audio: {fileID: 0}
+  usePrevSpeaker: 0000000000000000000000000000

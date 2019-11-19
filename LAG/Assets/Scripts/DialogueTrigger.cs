@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(GameEventListener))]
 public class DialogueTrigger : MonoBehaviour
 {
-    [SerializeField] private DialogueList dialogueList;
-    public Dialogue dialogue;
+    [SerializeField] private GameEvent gameEvent = null;
 
     public void OnEnable()
     {
-        dialogueList.CurrentIndex = dialogue.id;
+        gameEvent.Raise();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        this.enabled = true;
+        enabled = true;
     }
 }

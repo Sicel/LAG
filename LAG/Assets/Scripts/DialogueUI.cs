@@ -5,50 +5,125 @@ using TMPro;
 
 public class DialogueUI : MonoBehaviour
 {
-    public DialogueList dialogueList;
-    public TextMeshProUGUI speaker;
-    public TextMeshProUGUI dialogue;
+    [SerializeField] private TextMeshProUGUI speaker = null;
+    [SerializeField] private TextMeshProUGUI dialogue = null;
+    [SerializeField] private bool typeSentence = true;
+    [SerializeField, Range(0, 0.2f)] private float typeSpeed = 0.02f;
+    [SerializeField] private float timeBeforeNextSentence = 0.5f;
 
-    private Queue<string> speakers;
-    private Queue<string> textToDisplay;
+    private AudioSource audioSource;
+    private List<string> speakers;
+    private List<string> textToDisplay;
+    private int index = 0;
+    private float timer = 0.0f;
+    private bool timerStarted;
+    private bool dialogueStarted = false;
     //public static DialogueManager self;
-
-    public Dialogue CurrentDialogue { get => dialogueList.CurrentDialogue; }
 
     private void Start()
     {
-        speakers = new Queue<string>();
-        textToDisplay = new Queue<string>();
+        speakers = new List<string>();
+        textToDisplay = new List<string>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    public void StartDialogue()
+    private void Update()
+    {
+        if (!dialogueStarted)
+            return;
+
+        if (dialogue.text == textToDisplay[index])
+            timerStarted = true;
+
+        if (timerStarted)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= timeBeforeNextSentence)
+                DisplayNextSentence();
+        }
+    }
+
+
+    public void StartDialogue(Dialogue dialogue)
     {
         speakers.Clear();
         textToDisplay.Clear();
+        index = -1;
+        speaker.gameObject.SetActive(true);
+        this.dialogue.gameObject.SetActive(true);
+        audioSource.clip = dialogue.audio;
+        dialogueStarted = true;
 
-        for (int i = 0; i < CurrentDialogue.numDialogue; i++)
+        for (int i = 0; i < dialogue.numDialogue; i++)
         {
-            speakers.Enqueue(CurrentDialogue.speakers[i]);
-            textToDisplay.Enqueue(CurrentDialogue.sentences[i]);
+            speakers.Add(dialogue.speakers[i]);
+            textToDisplay.Add(dialogue.sentences[i]);
         }
 
         DisplayNextSentence();
     }
 
-    private void DisplayNextSentence()
+    public void DisplayNextSentence()
     {
-        if (textToDisplay.Count == 0)
+        if (index < textToDisplay.Count - 1)
+        {
+            index++;
+        }
+        else
         {
             EndDialogue();
             return;
         }
 
-        speaker.text = speakers.Dequeue();
-        dialogue.text = textToDisplay.Dequeue();
+        timer = 0;
+        timerStarted = false;
+        dialogue.text = "";
+
+        if (audioSource.clip)
+            audioSource.Play();
+
+        if (speakers[index] == "")
+            speaker.gameObject.SetActive(false);
+        else
+        {
+            if (!speaker.gameObject.activeInHierarchy)
+                speaker.gameObject.SetActive(true);
+
+            speaker.text = speakers[index];
+        }
+
+        string sentence = textToDisplay[index];
+
+        if (sentence == "")
+            sentence = "...";
+
+        StopAllCoroutines();
+
+        if (typeSentence)
+        {
+            StartCoroutine(TypeSentence(sentence));
+        }
+        else
+        {
+            dialogue.text = sentence;
+            timerStarted = true;
+        }
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogue.text += letter;
+            yield return new WaitForSeconds(typeSpeed);
+        }
     }
 
     private void EndDialogue()
     {
-
+        speaker.gameObject.SetActive(false);
+        dialogue.gameObject.SetActive(false);
+        dialogueStarted = false;
     }
 }
