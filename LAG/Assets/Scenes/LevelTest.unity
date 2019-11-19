@@ -11389,7 +11389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986444100}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 598, z: 93}
   m_LocalScale: {x: 1, y: 1.0000001, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11756,7 +11756,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.94224995, g: 0.6650944, b: 1, a: 0.14117648}
+      maxColor: {r: 0.2028302, g: 0.54459095, b: 1, a: 0.14117648}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -16510,16 +16510,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 313828926}
     m_Modifications:
-    - target: {fileID: 6365946406604163190, guid: c7896885b8691324f9af7ffc6d4f796b,
-        type: 3}
-      propertyPath: typeSentence
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6365946406604163190, guid: c7896885b8691324f9af7ffc6d4f796b,
-        type: 3}
-      propertyPath: timeBeforeNextSentence
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6365946406604163188, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
       propertyPath: m_Name
@@ -16634,6 +16624,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406604163190, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: typeSentence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365946406604163190, guid: c7896885b8691324f9af7ffc6d4f796b,
+        type: 3}
+      propertyPath: timeBeforeNextSentence
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6365946406307302556, guid: c7896885b8691324f9af7ffc6d4f796b,
         type: 3}
@@ -16806,7 +16806,7 @@ PrefabInstance:
         type: 3}
       propertyPath: response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 66d3c046c1f800d479f584d95968ff2b,
+      objectReference: {fileID: 11400000, guid: d87af7ecb1daf8840bb739216e89e710,
         type: 2}
     - target: {fileID: 9116507261834760103, guid: 857cdae87303de6449515bbb052e1306,
         type: 3}
