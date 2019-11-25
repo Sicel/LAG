@@ -12,48 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add8fab0b4c982941bbda1447f2f673b, type: 3}
   m_Name: I1
   m_EditorClassIdentifier: 
-  numDialogue: 20
+  numDialogue: 15
   speakers:
   - Kana
   - Kana
   - Kana
+  - 
   - Kana
   - Me
-  - Me
-  - Me
-  - Kana
-  - Kana
   - Kana
   - Me
   - Kana
   - Kana
   - Kana
+  - 
+  - 
   - Me
-  - Me
-  - Me
-  - Kana
-  - Kana
   - Kana
   sentences:
   - Hey.
   - Psst! Hey! You with the port!
-  - "Come on, there\x19s literally"
-  - "no one\r else here."
-  - 'I turn to face the girl, hoping to '
-  - 'get this over with as '
-  - quickly as possible
-  - Ah, great. I noticed that you uh..
-  - have that port on your head.
-  - Does it do what I think it does?
-  - I guess that depends
-  - 'I mean, you know.. I heard it '
-  - "can do\r neat things. "
-  - "Can'\x19t it transfer souls?"
-  - . . .
-  - 'I don''t know what '
-  - you're talking about
-  - "Oh come on, don\x19t try to pull that.\r "
-  - 'You and I both know '
-  - exactly what it does.
+  - "Come on, there\u2019s literally no one else here."
+  - I turn to face the girl, hoping to get this over as quickly as possible
+  - "Ah, great. I noticed that you uh\u2026 have that port on your head. Does it do
+    what I think it does?"
+  - I guess that depends.
+  - "I mean, you know\u2026 I heard it can do neat things. Can\u2019t it transfer
+    souls?"
+  - I have no idea what you're talking about.
+  - "Oh come on, don\u2019t try to pull that. You and I both know exactly what it
+    does."
+  - "I just want one small favor. Just one. I\u2019ll give you plenty of scripts too."
+  - Just name your price.
+  - I'm about to tell her to leave me alone when I look up at the new scroll
+  - 'WANTED FOR INSUBORDINATION: KANA-0571. REWARD GRANTED ON RETURN, BODY OR SOUL'
+  - Alright, I'll give you a chance
+  - Thank you! Thank you so much!
   audio: {fileID: 0}
-  usePrevSpeaker: 0001010100010000000100000101000001000101
+  usePrevSpeaker: 000000000000000000000000000000
