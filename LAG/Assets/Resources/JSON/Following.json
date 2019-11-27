@@ -1,7 +1,7 @@
 { "lines": 
     [
-        {"speaker": "", "dialogue": "I’m sure you know about me. Well, about what I do-- did."},
-        {"speaker": "", "dialogue": "It’s exhausting, you know? Day in and day out. You know they don’t care about you at all. "},
-        {"speaker": "", "dialogue": "I don't know how I live like this, how anyone lives like this."}
+        {"speaker": "Kana", "dialogue": "I’m sure you know about me. Well, about what I do-- did."},
+        {"speaker": "Kana", "dialogue": "It’s exhausting, you know? Day in and day out. You know they don’t care about you at all. "},
+        {"speaker": "Kana", "dialogue": "I don't know how I live like this, how anyone lives like this."}
     ]
 }
