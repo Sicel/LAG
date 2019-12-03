@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add8fab0b4c982941bbda1447f2f673b, type: 3}
+  m_Name: ReachedEdge
+  m_EditorClassIdentifier: 
+  numDialogue: 3
+  speakers:
+  - Kana
+  - Me
+  - Kana
+  sentences:
+  - "I\u2019ve never seen many of the blocks except for the Exec Block. You ever wonder
+    what\u2019s beyond?"
+  - 'Probably just more polluted wastelands and cites like this. '
+  - "Honestly I\u2019m still not sure why you want to get out of here so bad."
+  audio: {fileID: 0}
+  usePrevSpeaker: 000000

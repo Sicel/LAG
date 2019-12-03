@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add8fab0b4c982941bbda1447f2f673b, type: 3}
+  m_Name: ApproachingEdge
+  m_EditorClassIdentifier: 
+  numDialogue: 5
+  speakers:
+  - Kana
+  - Me
+  - Kana
+  - Me
+  - Me
+  sentences:
+  - 'A lot of the people in the upper class are real jerks. '
+  - "You don\u2019t say."
+  - "Well, obviously, but it\u2019s worse than you think! They quite literally use
+    people for their own gain and pleasure."
+  - "I\u2019d say you had it pretty good, livingIn some pristine tower."
+  - People like me and those poor souls in the factory actually have to work.
+  audio: {fileID: 0}
+  usePrevSpeaker: 
